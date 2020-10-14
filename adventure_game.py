@@ -1,14 +1,25 @@
 # --- My Test Based Adventure Game ---
-print("Welcome to my game!")
+import time, os
 
-playerName = input("What is your name? ")
+print("Loading...")
 
-print("Hello " + playerName)
+time.sleep(2)
 
-print("Choose a character:", "1. Knight", "2. Warrior", "3. Wizard", sep='\n')
+print("Welcome to my game! " + os.getlogin() + "\nPlease choose a character from the list:")
 
-characterList = ["Knight", "warrior", "Wizard"]
+characterList = ["Knight", "Warrior", "Wizard"]
 
-character = input("Type in your character number: ")
+i = 1
+for x in characterList:
+	print(str(i) + ". " + x)
+	i+=1
 
-print("You chose: " + characterList[int(character) -1])
+character = int(input("Type in your character number: "))
+
+while character not in range(1,i):
+	print("Please type in a valid number.")
+	character = int(input("Type in your character number: "))
+else:
+	selectedCharacter = characterList[character -1]
+	print("You chose: " + selectedCharacter)
+	
