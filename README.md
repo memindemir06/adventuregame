@@ -1,21 +1,16 @@
-# Breakout
-A classic Breakout game implemented in Python using the Tkinter library.
+# Command Line Game
+A basic game implemented in Python that is played in the command line.
 
 ## Requirements
 - Python 3.x
-- Tkinter (should be included with Python)
 ## How to Run
 1. Clone or download the repository
 2. Navigate to the directory where the files are stored
-3. Run the following command: ```python breakout.py```
+3. Run the following command: ```python adventure_game.py```
 ## How to Play
-- Use the left and right arrow keys to move the paddle
-- Use the space bar to launch the ball
-- Use the ball to break all the bricks in the level to advance to the next level
-## Features
-- Multiple levels with increasing difficulty
-- Score tracking
-- Lives system
+- Follow the on-screen prompts to enter commands or make selections
+- The objective of the game and the specific actions available will depend on the game implemented
+
 ## Credits
 Game concept: Atari Inc.
 
